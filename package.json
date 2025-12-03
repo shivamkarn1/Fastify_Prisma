@@ -4,7 +4,9 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/pg": "^8.15.6",
+    "prisma": "^7.0.1"
   },
   "scripts": {
     "dev": "bun --watch src/app.ts"
@@ -13,10 +15,13 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.0.1",
     "@prisma/client": "^7.0.1",
+    "dotenv": "^17.2.3",
     "fastify": "^5.6.2",
     "fastify-jwt": "^4.2.0",
     "fastify-zod": "^1.4.0",
+    "pg": "^8.16.3",
     "zod": "^4.1.13",
     "zod-to-json-schema": "^3.25.0"
   }
